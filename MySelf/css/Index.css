@@ -1,0 +1,2056 @@
+﻿<!--
+
+作者：杨少通 -->
+body {
+    width: 100%;
+    height: auto;
+    padding: 0;
+    margin: 0;
+    font-family: 'Microsoft YaHei','Microsoft YaHei UI',Magneto,Jokerman;
+    background: #fff;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-family: 'Microsoft YaHei','Microsoft YaHei UI',Magneto,Jokerman;
+}
+
+p, ul {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style: none;
+}
+
+img {
+    width: 100%;
+}
+
+body a {
+    text-decoration: none;
+    transition: all .5s;
+    /*兼容Safari和Chrome*/
+    -webkit-transition: all .5s;
+    /*兼容Firefox*/
+    -moz-transition: all .5s;
+    /*兼容Opera*/
+    -o-transition: all .5s;
+    /*兼容IE9*/
+    -ms-transition: all .5s;
+}
+
+    body a:hover {
+        text-decoration: none;
+    }
+
+    body a:focus, a:hover {
+        text-decoration: none;
+    }
+/*最外层*/
+.content {
+    width: 100%;
+    position: absolute;
+}
+/*博客连接*/
+.enter_blog {
+    height: 268px;
+    position: fixed;
+    z-index: 100;
+    right: 0;
+    top: 20%;
+    font-size: 20px;
+    color: #fff;
+    font-family: YouYuan,'Microsoft YaHei';
+    font-weight: bold;
+    border-right: 40px rgba(139, 139, 216, 0.4) solid;
+    border-bottom: 50px solid transparent;
+    border-top: 50px solid transparent;
+}
+
+    .enter_blog span {
+        width: 20px;
+        position: fixed;
+        right: 10px;
+    }
+/*首页*/
+.con_home {
+    position: relative;
+}
+    /*首页标题1*/
+    .con_home h1 {
+        width: 60%;
+        position: absolute;
+        top: 15%;
+        right: 0;
+        left: 0;
+        margin: 0 auto;
+        padding: 75px 0;
+        font-size: 75px;
+        font-weight: bold;
+        letter-spacing: 3px;
+        color: #fff;
+        background-color: rgba(0,0,0,0.22);
+        border: 5px solid #fff;
+    }
+    /*首页标题2*/
+    .con_home h2 {
+        width: 35%;
+        position: absolute;
+        top: 45%;
+        right: 0;
+        left: 0;
+        margin: 0 auto;
+        padding: 20px 0;
+        font-size: 25px;
+        font-weight: bold;
+        letter-spacing: 2px;
+        color: #000;
+        background-color: #fff;
+    }
+/*导航*/
+.con_nav {
+    width: 756px;
+    position: absolute;
+    top: 62%;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    text-align: center;
+}
+
+    .con_nav .con_nav_item {
+        width: 100px;
+        height: 100px;
+        position: relative;
+        margin: 13px;
+        float: left;
+        list-style: none;
+        border-radius: 50%;
+        box-shadow: 0 0 0 10px rgba(255,255,255,0.2),inset 0 0 15px 0px rgba(119, 132, 187, 0.8);
+    }
+
+.con_nav_item > div {
+    width: 100%;
+    height: 100%;
+    display: block;
+    position: absolute;
+    border-radius: 50%;
+}
+/*导航里的图标*/
+.con_nav_item_icon {
+    -webkit-transition: all 0.6s ease-in-out; /* Chrome 和 Safari */
+    -moz-transition: all 0.6s ease-in-out; /* Firefox */
+    -o-transition: all 0.6s ease-in-out; /*Opera*/
+    -ms-transition: all 0.6s ease-in-out; /*IE*/
+    transition: all 0.6s ease-in-out;
+}
+
+.con_nav_item:hover .con_nav_item_icon {
+    -webkit-transform: scale(0);
+    -moz-transform: scale(0);
+    -o-transform: scale(0);
+    -ms-transform: scale(0);
+    transform: scale(0);
+    opacity: 0;
+}
+
+.con_nav_item_icon i.fa {
+    font-size: 60px;
+    color: #fff;
+    line-height: 100px;
+}
+
+/*导航里的文字*/
+.con_nav_item_font {
+    opacity: 0;
+    background: rgba(0, 0, 0, 0.5);
+    -webkit-transform: scale(1.5); /* Chrome 和 Safari */
+    -moz-transform: scale(1.5); /* Firefox */
+    -o-transform: scale(1.5); /*Opera*/
+    -ms-transform: scale(1.5); /*IE*/
+    transform: scale(1.5);
+    -webkit-transition: all 0.4s ease-in-out 0.2s; /* Chrome 和 Safari */
+    -moz-transition: all 0.4s ease-in-out 0.2s; /* Firefox */
+    -o-transition: all 0.4s ease-in-out 0.2s; /*Opera*/
+    -ms-transition: all 0.4s ease-in-out 0.2s; /*IE*/
+    transition: all 0.4s ease-in-out 0.2s;
+}
+
+
+.con_nav_item:hover .con_nav_item_font {
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -o-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+    opacity: 1;
+}
+
+
+
+.con_nav_item_font h3 a {
+    font-size: 20px;
+    color: #fff;
+    line-height: 100px;
+    font-weight: bold;
+}
+
+    .con_nav_item_font h3 a:hover {
+        color: #078;
+    }
+/*区域1--关于我*/
+.con_area {
+    padding: 30px 0 50px;
+}
+
+.con_area1 {
+    width: 100%;
+    height: auto;
+    background: #fff;
+}
+
+.con_area h2 {
+    width: 100%;
+    position: relative;
+    line-height: 70px;
+    font-weight: bold;
+}
+
+    .con_area h2 span {
+        border-bottom: 1px #999999 solid;
+        display: inline-block;
+        font-size: 30px;
+    }
+
+    .con_area h2 i {
+        width: 40px;
+        height: 8px;
+        position: absolute;
+        bottom: -4px;
+        left: 50%;
+        margin-left: -20px;
+        background: rgba(119, 132, 187, 0.8);
+    }
+/*关于我--内容部分*/
+.area1_content {
+    /*width: 80%;*/
+    width: 1080px;
+    height: auto;
+    margin: 0 auto;
+    transition: all .5s ease-in;
+    position: relative;
+    background: #f4f4f4;
+}
+
+.area1_content1 {
+    margin: 20px auto;
+}
+
+.area1_content img {
+    width: 50%;
+}
+
+.area1_content_inform {
+    width: 50%;
+    padding-bottom: 20px;
+    background: #f4f4f4;
+    position: absolute;
+    top: 0;
+}
+
+.ess_inform {
+    right: 0;
+}
+
+.evaluation {
+    left: 0;
+}
+
+.evaluation_img {
+    margin-left: 50%;
+}
+
+.area1_content_inform h3 {
+    width: 90%;
+    margin: 0 auto 10px;
+    line-height: 48px;
+    text-align: left;
+    font-size: 16px;
+    border-bottom: 2px #000 solid;
+}
+
+.a1_con_inform_ul {
+    width: 90%;
+    margin: 0 auto;
+    font-family: SimHei,'Microsoft YaHei';
+    font-size: 14px;
+}
+
+.a1_con_inform_ul_li ul li {
+    display: inline-block;
+    line-height: 27px;
+}
+
+.area1_content:hover {
+    box-shadow: 5px 10px 10px #999999;
+}
+
+.evaluation p {
+    width: 90%;
+    margin: 0 auto;
+    line-height: 30px;
+    text-indent: 2em;
+    font-size: 14px;
+}
+
+/*区域2--关于梦想*/
+.con_area2 {
+    background: #f4f4f4;
+}
+
+.area2_dream {
+    width: 1080px;
+    height: 520px;
+    position: relative;
+    margin: 0 auto;
+}
+
+.dream_con {
+    width: 33.3%;
+    height: 80%;
+    position: absolute;
+    top: 50%;
+    margin-top: -208px;
+    background: #fff;
+    border: 1px solid #b1b1b1;
+    box-shadow: 3px 5px 10px rgba(144,144,144,.7);
+}
+
+.dream_lwt_tit {
+    width: 100%;
+    height: 30%;
+    background: #c0c9f5;
+    padding: 10px;
+}
+
+    .dream_lwt_tit div {
+        width: 55px;
+        height: 55px;
+        margin: 0 auto;
+        line-height: 55px;
+        text-align: center;
+        margin-bottom: 10px;
+        border-radius: 50%;
+    }
+
+    .dream_lwt_tit h3 {
+        width: 60%;
+        height: 35px;
+        margin: 0 auto;
+        line-height: 35px;
+    }
+
+    .dream_lwt_tit div, .dream_lwt_tit h3 {
+        background-color: rgba(255,255,255,1);
+        color: rgba(128,128,128,0.5);
+        font-size: 20px;
+        transform: translateZ(0);
+        -moz-transform: translateZ(0);
+        -webkit-transform: translateZ(0);
+        -o-transform: translateZ(0);
+        -ms-transform: translateZ(0);
+        transition: color .3s;
+        -moz-transition: color .3s;
+        -webkit-transition: color .3s;
+        -o-transition: color .3s;
+        -ms-transition: color .3s;
+    }
+
+        .dream_lwt_tit div:before, .dream_lwt_tit h3:before {
+            content: "";
+            position: absolute;
+            z-index: -1;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            background-color: rgba(202,202,202,0.5);
+            transform: scale(1);
+            -moz-transform: scale(1);
+            -webkit-transform: scale(1);
+            -o-transform: scale(1);
+            -ms-transform: scale(1);
+            transition: transform .3s ease-out;
+            -moz-transition: transform .3s ease-out;
+            -webkit-transition: transform .3s ease-out;
+            -o-transition: transform .3s ease-out;
+            -ms-transition: transform .3s ease-out;
+        }
+
+        .dream_lwt_tit div:before {
+            border-radius: 50%;
+        }
+
+        .dream_lwt_tit div:hover, .dream_lwt_tit h3:hover, .dream_con:hover .dream_lwt_tit div, .dream_con:hover .dream_lwt_tit h3 {
+            color: rgba(128,128,128,1);
+        }
+
+            .dream_lwt_tit div:hover:before, .dream_lwt_tit h3:hover:before, .dream_con:hover .dream_lwt_tit div:before, .dream_con:hover .dream_lwt_tit h3:before {
+                transform: scale(0);
+                -moz-transform: scale(0);
+                -webkit-transform: scale(0);
+                -o-transform: scale(0);
+                -ms-transform: scale(0);
+            }
+
+.dream_lwt_con {
+    width: 100%;
+    height: 70%;
+    background: #fff;
+    padding: 20px 15px;
+}
+
+    .dream_lwt_con p {
+        line-height: 30px;
+        font-size: 15px;
+        text-indent: 2em;
+    }
+
+/*区域三--爱情观*/
+.con_area3 {
+    /*background:url(../images/loveBG.jpg) no-repeat center top;*/
+    background: url(../images/loveBG2.jpg) no-repeat center top;
+    background-size: cover;
+}
+
+.area3_love {
+    width: 1080px;
+    height: 520px;
+    margin: 10px auto 0;
+    padding: 50px 40px;
+    text-align: center;
+    line-height: 40px;
+    font-size: 20px;
+    font-weight: 700;
+    /*background:rgba(225,225,225,.4);*/
+    background: rgba(47, 44, 44, 0.58);
+    color: #fff;
+}
+
+    .area3_love p {
+        animation-name: love_p_show;
+        animation-delay: 0s;
+        animation-direction: normal;
+        animation-duration: 3s;
+        animation-play-state: paused;
+    }
+
+@keyframes love_p_show {
+    from {
+        transform: scale(0);
+        -moz-transform: scale(0);
+        -o-transform: scale(0);
+        -webkit-transform: scale(0);
+        -ms-transform: scale(0);
+        opacity: 0;
+    }
+
+    to {
+        transform: scale(1);
+        -moz-transform: scale(1);
+        -o-transform: scale(1);
+        -webkit-transform: scale(1);
+        -ms-transform: scale(1);
+        opacity: 1;
+    }
+}
+
+/*经验区域*/
+#con_area4 {
+    width: 100%;
+    height: auto;
+    background: #fff;
+    display: inline-block;
+}
+
+.area4_experience {
+    width: 1080px;
+    height: auto;
+    display: table;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+.area4_experience_box {
+    position: relative;
+    padding: 8px;
+    float: left;
+    overflow: hidden;
+}
+
+.fancy {
+    position: relative;
+    display: block;
+    padding: 8px;
+    border: 1px solid #777777;
+    box-shadow: 0 0 7px #777777;
+    border-radius: 5px;
+}
+
+    .fancy img {
+        width: 180px;
+        height: auto;
+        border: none;
+    }
+
+.area4_introduce {
+    width: 180px;
+    line-height: 30px;
+    position: absolute;
+    bottom: 17px;
+    left: 50%;
+    margin-left: -90px;
+    font-size: 16px;
+    background: rgba(49,49,49,.4);
+    color: #fff;
+    transition: transform 1s;
+    -webkit-transition: transform 1s;
+    -ms-transition: transform 1s;
+    -moz-transition: transform 1s;
+    -o-transition: transform 1s;
+    transform: scale(0);
+    -moz-transform: scale(0);
+    -o-transform: scale(0);
+    -webkit-transform: scale(0);
+    -ms-transform: scale(0);
+}
+
+.area4_experience_box:hover > .area4_introduce {
+    transform: scale(1);
+    -moz-transform: scale(1);
+    -o-transform: scale(1);
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+}
+
+.fancybox-wrap, .fancybox-skin, .fancybox-outer, .fancybox-inner, .fancybox-image, .fancybox-wrap iframe, .fancybox-wrap object, .fancybox-nav, .fancybox-nav span, .fancybox-tmp {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    outline: none;
+    vertical-align: top;
+}
+
+.fancybox-wrap {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 8020;
+}
+
+.fancybox-skin {
+    position: relative;
+    background: #f9f9f9;
+    color: #444;
+    text-shadow: none;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+}
+
+.fancybox-opened {
+    z-index: 8030;
+}
+
+    .fancybox-opened .fancybox-skin {
+        -webkit-box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+        -moz-box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+    }
+
+.fancybox-outer, .fancybox-inner {
+    position: relative;
+}
+
+.fancybox-inner {
+    overflow: hidden;
+}
+
+.fancybox-type-iframe .fancybox-inner {
+    -webkit-overflow-scrolling: touch;
+}
+
+.fancybox-error {
+    color: #444;
+    margin: 0;
+    padding: 15px;
+    white-space: nowrap;
+}
+
+.fancybox-image, .fancybox-iframe {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.fancybox-image {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+#fancybox-loading, .fancybox-close, .fancybox-prev span, .fancybox-next span {
+    background-image: url('/images/fancybox_sprite.png');
+}
+
+#fancybox-loading {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin-top: -22px;
+    margin-left: -22px;
+    background-position: 0 -108px;
+    opacity: 0.8;
+    cursor: pointer;
+    z-index: 8060;
+}
+
+    #fancybox-loading div {
+        width: 44px;
+        height: 44px;
+        background: url(/images/fancybox_loading.gif) center center no-repeat;
+    }
+
+.fancybox-close {
+    position: absolute;
+    top: -18px;
+    right: -18px;
+    width: 36px;
+    height: 36px;
+    cursor: pointer;
+    z-index: 8040;
+}
+
+.fancybox-nav {
+    position: absolute;
+    top: 0;
+    width: 40%;
+    height: 100%;
+    cursor: pointer;
+    text-decoration: none;
+    background-image: url('/images/blank.gif');
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    z-index: 8040;
+}
+
+.fancybox-prev {
+    left: 0;
+}
+
+.fancybox-next {
+    right: 0;
+}
+
+.fancybox-nav span {
+    position: absolute;
+    top: 50%;
+    width: 36px;
+    height: 34px;
+    margin-top: -18px;
+    cursor: pointer;
+    z-index: 8040;
+    visibility: hidden;
+}
+
+.fancybox-prev span {
+    left: 10px;
+    background-position: 0 -36px;
+}
+
+.fancybox-next span {
+    right: 10px;
+    background-position: 0 -72px;
+}
+
+.fancybox-nav:hover span {
+    visibility: visible;
+}
+
+.fancybox-tmp {
+    position: absolute;
+    top: -99999px;
+    left: -99999px;
+    max-width: 99999px;
+    max-height: 99999px;
+    overflow: visible !important;
+}
+/* 弹出图片的样式 */
+
+.fancybox-lock {
+    overflow: visible !important;
+    width: auto;
+}
+
+    .fancybox-lock body {
+        overflow: hidden !important;
+    }
+
+.fancybox-lock-test {
+    overflow-y: hidden !important;
+}
+
+.fancybox-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    display: none;
+    z-index: 8010;
+    background-image: url('/images/fancybox_overlay.png');
+}
+
+.fancybox-overlay-fixed {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+}
+
+.fancybox-lock .fancybox-overlay {
+    overflow: auto;
+    overflow-y: scroll;
+}
+/* 图片底部文字样式 */
+
+.fancybox-title {
+    visibility: hidden;
+    position: relative;
+    text-shadow: none;
+    z-index: 8050;
+}
+
+.fancybox-opened .fancybox-title {
+    visibility: visible;
+}
+
+.fancybox-title-float-wrap {
+    position: absolute;
+    bottom: 0;
+    right: 50%;
+    margin-bottom: -35px;
+    z-index: 8050;
+    text-align: center;
+}
+
+    .fancybox-title-float-wrap .child {
+        display: inline-block;
+        margin-right: -100%;
+        padding: 2px 20px;
+        background: transparent;
+        background: rgba(0, 0, 0, 0.8);
+        -webkit-border-radius: 15px;
+        -moz-border-radius: 15px;
+        border-radius: 15px;
+        text-shadow: 0 1px 2px #222;
+        color: #FFF;
+        font-family: YouYuan;
+        font-weight: bold;
+        line-height: 24px;
+        white-space: nowrap;
+    }
+
+.fancybox-title-outside-wrap {
+    position: relative;
+    margin-top: 10px;
+    color: #fff;
+}
+
+.fancybox-title-inside-wrap {
+    padding-top: 10px;
+}
+
+.fancybox-title-over-wrap {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    color: #fff;
+    padding: 10px;
+    background: #000;
+    background: rgba(0, 0, 0, .8);
+}
+
+/*调整图片大小时出现旋转图标*/
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min--moz-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) {
+    #fancybox-loading, .fancybox-close, .fancybox-prev span, .fancybox-next span {
+        background-image: url(/images/fancybox_sprite@2x.png);
+        background-size: 44px 152px; /*图像大小为高分辨路图像大小的一半*/
+    }
+
+        #fancybox-loading div {
+            background-image: url(/images/fancybox_loading@2x.gif);
+            background-size: 24px 24px; /*图像大小为高分辨路图像大小的一半*/
+        }
+}
+
+/*区域5--团队*/
+.con_area5 {
+    background: #f4f4f4;
+}
+
+.area5_team {
+    width: 1080px;
+    height: auto;
+    position: relative;
+    margin: 0 auto;
+    padding: 10px 0;
+}
+
+.a5_logo_area {
+    width: 100%;
+    height: 100px;
+    position: relative;
+    border-bottom: double 3px #cccccc;
+}
+
+    .a5_logo_area a {
+        width: 50%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        text-align: center;
+    }
+
+        .a5_logo_area a:last-child {
+            right: 0;
+            animation-name: tute_anmin;
+            animation-delay: 0;
+            animation-duration: 2s;
+            animation-fill-mode: backwards;
+            animation-iteration-count: infinite;
+            animation-play-state: running;
+            animation-direction: alternate;
+        }
+
+@keyframes tute_anmin {
+    from {
+        width: 45%;
+        height: 95%;
+        opacity: 1;
+    }
+
+    to {
+        width: 50%;
+        height: 100%;
+        opacity: 0;
+    }
+}
+
+.a5_logo_area a img {
+    height: 100%;
+    width: auto;
+    animation-name: a5_img;
+    animation-delay: 0;
+    animation-duration: 2s;
+    animation-play-state: running;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-fill-mode: backwards;
+}
+
+@keyframes a5_img {
+    from {
+        transform: rotateY(0deg);
+        -moz-transform: rotateY(0deg);
+        -o-transform: rotateY(0deg);
+        -webkit-transform: rotateY(0deg);
+        -ms-transform: rotateY(0deg);
+        opacity: 0;
+    }
+
+    to {
+        transform: rotateY(360deg);
+        -moz-transform: rotateY(360deg);
+        -o-transform: rotateY(360deg);
+        -webkit-transform: rotateY(360deg);
+        -ms-transform: rotateY(360deg);
+        opacity: 1;
+    }
+}
+
+.a5_logo_area a p {
+    width: 116px;
+    height: auto;
+    font-size: 18px;
+}
+
+.a5_introduce {
+    width: 100%;
+    height: auto;
+    padding: 40px 30px;
+    text-indent: 2em;
+    font-size: 20px;
+    line-height: 40px;
+}
+
+.a5_tute {
+    width: 100%;
+    height: 30px;
+    display: block;
+    padding: 0 30px;
+    margin-bottom: 80px;
+    font-size: 16px;
+    line-height: 30px;
+    text-align: right;
+}
+/*区域6--联系*/
+.con_area6 {
+    background: #fff;
+}
+
+.area6_touch {
+    width: 1080px;
+    height: auto;
+    display: table;
+    margin: 0 auto;
+    padding: 35px 0;
+}
+
+.a6_p {
+    width: 100%;
+    font-size: 18px;
+    line-height: 40px;
+    text-align: center;
+}
+
+.touch_way {
+    width: 17.84%;
+    height: 300px;
+    display: inline-block;
+    margin: 30px 10px;
+    text-align: center;
+    background: #f4f4f4;
+    color: #000;
+    border: none;
+}
+
+.touch_red {
+    background: #990000;
+    color: #fff;
+}
+
+.touch_way_top {
+    width: 100%;
+    height: 70%;
+    position: relative;
+}
+
+    .touch_way_top i {
+        width: 100%;
+        height: auto;
+        position: absolute;
+        left: 0;
+        top: 50%;
+        margin-top: -35px;
+        font-size: 70px;
+        vertical-align: middle;
+    }
+
+.touch_way_bottom {
+    width: 100%;
+    height: 30%;
+    position: relative;
+    border-top: 1px solid #fff;
+}
+
+    .touch_way_bottom b {
+        width: 50px;
+        height: 50px;
+        display: block;
+        margin: 0 auto;
+        margin-top: -25px;
+        line-height: 40px;
+        border-radius: 50%;
+        border: 5px solid #f4f4f4;
+        background: #990000;
+    }
+
+    .touch_way_bottom h3 {
+        width: 100%;
+        height: 25px;
+        position: absolute;
+        top: 50%;
+        left: 0;
+        margin-top: -12.5px;
+        padding: 0 10px;
+        line-height: 25px;
+        font-size: 20px;
+        font-weight: 100;
+        word-break: break-all;
+        word-wrap: break-word;
+    }
+/*火箭置顶*/
+#rocket-to-top div {
+    width: 149px;
+    position: absolute;
+    overflow: hidden;
+    left: 0;
+    top: 0;
+    margin: 0;
+    padding: 0;
+}
+
+#rocket-to-top .level-2 {
+    height: 250px;
+    display: none;
+    z-index: 1;
+    opacity: 0;
+    background: url("../images/rocket_button_up.png") no-repeat scroll -149px 0 transparent;
+}
+
+#rocket-to-top .level-3 {
+    background: none repeat scroll 0 0 transparent;
+    cursor: pointer;
+    display: block;
+    height: 150px;
+    z-index: 2;
+}
+
+#rocket-to-top {
+    width: 149px;
+    height: 250px;
+    display: block;
+    margin: -125px 0 0;
+    padding: 0;
+    position: fixed;
+    z-index: 11;
+    right: 0;
+    top: 80%;
+    background: url("../images/rocket_button_up.png") no-repeat 0 0 transparent;
+    background-attachment: scroll; /*允许背景改动*/
+    cursor: default;
+    overflow: hidden;
+}
+
+
+/*响应式样式*/
+@media screen and (max-width:1920px) {
+    .con_home h1 {
+        top: 25%;
+    }
+
+    .con_home h2 {
+        top: 51%;
+    }
+
+    .con_nav {
+        width: 960px;
+        top: 65%;
+    }
+
+        .con_nav .con_nav_item {
+            margin: 30px;
+        }
+}
+
+@media screen and (max-width:1680px) {
+    .con_home h1 {
+        top: 20%;
+    }
+
+    .con_nav {
+        top: 60%;
+    }
+}
+
+@media screen and (max-width: 1600px) {
+    .con_home h1 {
+        top: 15%;
+    }
+
+    .con_home h2 {
+        top: 45%;
+    }
+
+    .con_nav {
+        top: 62%;
+    }
+}
+
+@media screen and (max-width:1440px) {
+    .con_home h2 {
+        top: 50%;
+    }
+
+    .con_nav {
+        width: 756px;
+    }
+
+        .con_nav .con_nav_item {
+            margin: 13px;
+        }
+}
+
+@media screen and (max-width:1366px) {
+    .con_home h1 {
+        width: 70%;
+    }
+}
+
+@media screen and (max-width:1280px) {
+    .con_home h1 {
+        width: 75%;
+        top: 10%;
+    }
+    /*博客连接*/
+    .enter_blog {
+        height: 258px;
+        border-right: 35px rgba(139, 139, 216, 0.4) solid;
+        border-bottom: 45px solid transparent;
+        border-top: 45px solid transparent;
+    }
+
+        .enter_blog span {
+            right: 8px;
+        }
+    /*区域1--关于我*/
+    .area1_content {
+        width: 900px;
+    }
+
+    .con_area h2 span {
+        font-size: 25px;
+    }
+
+    .area1_content_inform {
+        padding-bottom: 10px;
+    }
+
+        .area1_content_inform h3 {
+            line-height: 40px;
+        }
+
+    .a1_con_inform_ul_li ul li, .evaluation p {
+        line-height: 23px;
+    }
+    /*区域2--梦想*/
+    .area2_dream {
+        width: 900px;
+        height: 500px;
+    }
+
+    .dream_con {
+        margin-top: -200px;
+    }
+
+    .dream_lwt_con p {
+        font-size: 14px;
+    }
+    /*区域3--爱情观*/
+    .area3_love {
+        width: 900px;
+        height: auto;
+    }
+    /*区域4--经验*/
+    .area4_experience {
+        width: 900px;
+    }
+
+    .area4_experience_box {
+        padding: 5px;
+    }
+
+    .fancy {
+        padding: 5px;
+    }
+
+        .fancy img {
+            width: 157px;
+        }
+
+    .area4_introduce {
+        width: 157px;
+        margin-left: -78.5px;
+        bottom: 11px;
+    }
+    /*区域5--团队*/
+    .area5_team {
+        width: 900px;
+    }
+
+    .a5_tute {
+        margin-bottom: 65px;
+    }
+    /*区域6--联系*/
+    .area6_touch {
+        width: 900px;
+    }
+
+    .touch_way {
+        width: 17.4%;
+        height: 250px;
+    }
+
+    .touch_way_top i {
+        margin-top: -30px;
+        font-size: 60px;
+    }
+
+    .touch_way_bottom b {
+        width: 45px;
+        height: 45px;
+        line-height: 35px;
+    }
+
+    .touch_way_bottom h3 {
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width:1080px) {
+    .con_home h1 {
+        width: 75%;
+        padding: 50px 0;
+        font-size: 60px;
+    }
+
+    .con_home h2 {
+        width: 35%;
+        top: 48%;
+        padding: 15px 0;
+        font-size: 20px;
+    }
+    /*博客连接*/
+    .enter_blog {
+        height: 220px;
+        border-right: 30px rgba(139, 139, 216, 0.4) solid;
+        border-bottom: 35px solid transparent;
+        border-top: 35px solid transparent;
+        font-size: 18px;
+    }
+
+        .enter_blog span {
+            width: 18px;
+            right: 6px;
+        }
+    /*火箭置顶*/
+    #rocket-to-top {
+        width: 115px;
+        transform: scale(0.9);
+        -webkit-transform: scale(0.9); /*Chrome和Safari*/
+        -o-transform: scale(0.9); /*Opera*/
+        -moz-transform: scale(0.9); /*Firefox*/
+        -ms-transform: scale(0.9); /*IE*/
+    }
+}
+
+@media screen and (max-width:1024px) {
+}
+
+@media screen and (max-width:991px) {
+    .con_nav_item_icon i.fa {
+        font-size: 50px;
+    }
+}
+
+@media screen and (max-width:966px) {
+    /*区域1--关于我*/
+    .area1_content {
+        width: 800px;
+    }
+
+    .con_area h2 span {
+        font-size: 23px;
+    }
+
+    .area1_content_inform {
+        padding-bottom: 10px;
+    }
+
+        .area1_content_inform h3 {
+            line-height: 38px;
+        }
+
+    .a1_con_inform_ul_li ul li {
+        line-height: 20px;
+    }
+
+    .evaluation h3 {
+        margin-bottom: 12px;
+    }
+
+    .evaluation p {
+        line-height: 18px;
+    }
+    /*区域2--梦想*/
+    .area2_dream {
+        width: 800px;
+        height: 460px;
+    }
+
+    .dream_con {
+        margin-top: -184px;
+    }
+
+    .dream_lwt_tit div {
+        width: 50px;
+        height: 50px;
+        line-height: 50px;
+        margin-bottom: 8px;
+    }
+
+    .dream_lwt_tit h3 {
+        height: 30px;
+        line-height: 30px;
+    }
+
+    .dream_lwt_tit div, .dream_lwt_tit h3 {
+        font-size: 18px;
+    }
+
+    .dream_lwt_con p {
+        line-height: 24px;
+    }
+    /*区域3--爱情观*/
+    .area3_love {
+        width: 800px;
+        font-size: 18px;
+        line-height: 35px;
+    }
+    /*区域4--经验*/
+    .area4_experience {
+        width: 800px;
+    }
+
+
+    .fancy img {
+        width: 138px;
+    }
+
+    .area4_introduce {
+        width: 138px;
+        margin-left: -69px;
+    }
+    /*区域5--团队*/
+    .area5_team {
+        width: 800px;
+    }
+
+    .a5_logo_area {
+        height: 80px;
+    }
+
+    .a5_introduce {
+        padding: 35px 25px;
+        font-size: 18px;
+    }
+
+    .a5_tute {
+        padding: 0 25px;
+        margin-bottom: 40px;
+    }
+    /*区域6--联系*/
+    .area6_touch {
+        width: 800px;
+        padding: 25px 0;
+    }
+
+    .touch_way {
+        width: 17%;
+        height: 220px;
+    }
+
+    .touch_way_top {
+        height: 65%;
+    }
+
+        .touch_way_top i {
+            margin-top: -26px;
+            font-size: 52px;
+        }
+
+    .touch_way_bottom {
+        height: 35%;
+    }
+}
+
+@media screen and (max-width:900px) {
+    .con_home h1 {
+        width: 70%;
+        padding: 40px;
+        font-size: 50px;
+    }
+}
+
+@media screen and (max-width:853px) {
+    .con_home h1 {
+        width: 75%;
+    }
+    /*博客连接*/
+    .enter_blog {
+        height: 186px;
+        border-right: 25px rgba(139, 139, 216, 0.4) solid;
+        border-bottom: 30px solid transparent;
+        border-top: 30px solid transparent;
+        font-size: 15px;
+    }
+
+        .enter_blog span {
+            width: 15px;
+            right: 4px;
+        }
+    /*区域1--关于我*/
+    .area1_content {
+        width: 650px;
+    }
+
+    .area1_content_inform {
+        padding-bottom: 25px;
+    }
+
+    .area1_content_inform {
+        width: 100%;
+        position: static;
+    }
+
+    .area1_content img {
+        width: 100%;
+        margin: 0;
+    }
+
+    .area1_content_inform h3 {
+        line-height: 48px;
+    }
+
+    .a1_con_inform_ul_li ul li, .evaluation p {
+        line-height: 25px;
+    }
+    /*区域2--梦想*/
+    .area2_dream {
+        width: 650px;
+        height: auto;
+        padding: 30px 0;
+    }
+
+    .dream_con {
+        width: 100%;
+        height: auto;
+        position: static;
+        margin-top: 30px;
+        top: initial;
+    }
+
+        .dream_con:first-child {
+            margin-top: 0px;
+        }
+
+    .dream_lwt_con p {
+        line-height: 30px;
+    }
+    /*区域3--爱情观*/
+    .area3_love {
+        width: 650px;
+    }
+    /*区域4--经验*/
+    .area4_experience {
+        width: 650px;
+    }
+
+    .area4_experience_box, .fancy {
+        padding: 3px;
+    }
+
+        .fancy img {
+            width: 115px;
+        }
+
+    .area4_introduce {
+        width: 115px;
+        line-height: 20px;
+        font-size: 14px;
+        margin-left: -57.5px;
+        bottom: 7px;
+    }
+    /*区域5--团队*/
+    .area5_team {
+        width: 650px;
+    }
+
+    .a5_logo_area {
+        height: 70px;
+    }
+
+        .a5_logo_area a p, .a5_introduce {
+            font-size: 16px;
+        }
+
+    .a5_tute {
+        margin-bottom: 25px;
+    }
+    /*区域6--联系*/
+    .area6_touch {
+        width: 650px;
+        padding: 15px 0;
+    }
+
+    .touch_way {
+        width: 46.62%;
+        height: 210px;
+        margin: 10px;
+    }
+
+    /*火箭置顶*/
+    #rocket-to-top {
+        transform: scale(0.8);
+        -webkit-transform: scale(0.8); /*Chrome和Safari*/
+        -o-transform: scale(0.8); /*Opera*/
+        -moz-transform: scale(0.8); /*Firefox*/
+        -ms-transform: scale(0.8); /*IE*/
+    }
+}
+
+@media screen and (max-width:800px) {
+    .con_home h1 {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .con_home h1 {
+        width: 67%;
+        padding: 30px 0;
+        font-size: 40px;
+    }
+
+    .con_home h2 {
+        width: 40%;
+        top: 45%;
+    }
+
+    .con_nav {
+        width: 636px;
+    }
+
+        .con_nav .con_nav_item {
+            width: 80px;
+            height: 80px;
+        }
+
+    .con_nav_item .con_nav_item_icon i.fa {
+        line-height: 80px;
+        font-size: 40px;
+    }
+
+    .con_nav_item .con_nav_item_font h3 a.scroll_move {
+        line-height: 80px;
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width:767px) {
+}
+
+@media screen and (max-width:736px) {
+    .con_home h1 {
+        width: 70%;
+    }
+
+    .con_area {
+        padding-top: 0;
+        padding-bottom: 30px;
+    }
+
+    /*区域1--关于我、区域2--梦想、区域3--爱情观、区域4--经验*/
+    .area1_content, .area2_dream, .area3_love, .area4_experience, .area5_team {
+        width: 550px;
+    }
+    /*区域3--爱情观*/
+
+    .area3_love {
+        text-align: left;
+        text-indent: 2em;
+        padding: 30px 20px;
+    }
+    /*区域4--经验*/
+
+    .fancy img {
+        width: 95px;
+    }
+
+    .area4_introduce {
+        width: 95px;
+        margin-left: -47.5px;
+    }
+    /*区域5--团队*/
+
+    .a5_logo_area {
+        height: 65px;
+    }
+
+    .a5_tute {
+        margin-bottom: 10px;
+    }
+    /*区域6--联系*/
+    .area6_touch {
+        width: 550px;
+    }
+
+    .a6_p {
+        line-height: 30px;
+    }
+
+    .touch_way {
+        width: 96.06%;
+        height: 210px;
+    }
+
+    .touch_way_top i {
+        margin-top: -30px;
+        font-size: 60px;
+    }
+
+    .touch_way_bottom b {
+        width: 50px;
+        height: 50px;
+        line-height: 40px;
+    }
+
+    .touch_way_bottom h3 {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width:667px) {
+    .con_home h1 {
+        font-size: 35px;
+    }
+
+    .con_home h2 {
+        width: 42%;
+        padding: 12px 0;
+        font-size: 17px;
+    }
+}
+
+@media screen and (max-width:640px) {
+    .con_home h1 {
+        width: 74%;
+    }
+
+    .con_home h2 {
+        top: 50%;
+    }
+
+    .con_nav {
+        width: 576px;
+        top: 65%;
+    }
+
+        .con_nav .con_nav_item {
+            width: 70px;
+            height: 70px;
+        }
+
+    .con_nav_item .con_nav_item_icon i.fa {
+        line-height: 70px;
+        font-size: 35px;
+    }
+
+    .con_nav_item .con_nav_item_font h3 a.scroll_move {
+        line-height: 70px;
+        font-size: 15px;
+    }
+    /*区域1--关于我、区域2-关于梦想、区域3--爱情观*/
+    .area1_content, .area2_dream, .area3_love, .area5_team, .area6_touch {
+        width: 75%;
+    }
+    /*区域4--经验*/
+    .area4_experience {
+        width: 470px;
+    }
+
+
+    .fancy img {
+        width: 80px;
+    }
+
+    .area4_introduce {
+        width: 80px;
+        line-height: 18px;
+        font-size: 13px;
+        margin-left: -40px;
+        bottom: 7px;
+    }
+    /*区域5--团队*/
+
+    .a5_logo_area {
+        height: 60px;
+    }
+
+        .a5_logo_area a p {
+            font-size: 16px;
+        }
+
+    .a5_introduce {
+        padding: 15px 5px;
+        font-size: 15px;
+        line-height: 30px;
+    }
+
+    .a5_tute {
+        padding: 0 5px;
+        font-size: 15px;
+        margin-bottom: 0;
+    }
+    /*区域6--联系*/
+
+    .touch_way {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .a6_p {
+        font-size: 16px;
+    }
+
+    .touch_way_top i {
+        margin-top: -26px;
+        font-size: 52px;
+    }
+
+    .touch_way_bottom b {
+        width: 45px;
+        height: 45px;
+        line-height: 35px;
+    }
+
+    .touch_way_bottom h3 {
+        font-size: 14px;
+    }
+    /*火箭置顶*/
+    #rocket-to-top {
+        transform: scale(0.7);
+        -webkit-transform: scale(0.7); /*Chrome和Safari*/
+        -o-transform: scale(0.7); /*Opera*/
+        -moz-transform: scale(0.7); /*Firefox*/
+        -ms-transform: scale(0.7); /*IE*/
+    }
+}
+
+@media screen and (max-width:603px) {
+}
+
+@media screen and (max-width:600px) {
+    .con_home h1 {
+        width: 77%;
+    }
+
+    .con_nav {
+        width: 456px;
+    }
+
+        .con_nav .con_nav_item {
+            width: 60px;
+            height: 60px;
+            box-shadow: 0 0 0 5px rgba(255,255,255,0.2),inset 0 0 15px 0px rgba(119, 132, 187, 0.8);
+            margin: 8px;
+        }
+
+    .con_nav_item .con_nav_item_icon i.fa {
+        line-height: 60px;
+        font-size: 30px;
+    }
+
+    .con_nav_item .con_nav_item_font h3 a.scroll_move {
+        line-height: 60px;
+    }
+}
+
+@media screen and (max-width:568px) {
+    .con_home h1 {
+        width: 80%;
+    }
+
+    .con_home h2 {
+        width: 45%;
+        padding: 10px 0;
+        font-size: 15px;
+    }
+
+    .con_nav_item .con_nav_item_font h3 a.scroll_move {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width:533px) {
+    .con_home h1 {
+        width: 77%;
+        padding: 25px 0;
+        font-size: 30px;
+    }
+
+    .con_nav {
+        width: 396px;
+    }
+
+        .con_nav .con_nav_item {
+            width: 50px;
+            height: 50px;
+        }
+
+    .con_nav_item .con_nav_item_icon i.fa {
+        line-height: 50px;
+    }
+
+    .con_nav_item .con_nav_item_font h3 a.scroll_move {
+        line-height: 50px;
+        font-size: 13px;
+    }
+    /*区域1--关于我*/
+
+    .area1_content_inform h3 {
+        font-size: 15px;
+    }
+
+    .a1_con_inform_ul, .evaluation p {
+        font-size: 13px;
+    }
+    /*区域2--梦想*/
+    .dream_lwt_tit div, .dream_lwt_tit h3 {
+        font-size: 15px;
+        color: rgba(128,128,128,1);
+    }
+
+        .dream_lwt_tit div:before, .dream_lwt_tit h3:before {
+            background: rgba(255,255,255,1);
+        }
+
+    .dream_lwt_con p {
+        font-size: 13px;
+        line-height: 30px;
+    }
+    /*区域3--爱情观*/
+    .area3_love {
+        font-size: 16px;
+    }
+
+        .area3_love p {
+            animation-play-state: running;
+        }
+    /*区域4--经验*/
+    .area4_experience {
+        width: 370px;
+    }
+
+
+    .fancy img {
+        width: 60px;
+    }
+
+    .area4_introduce {
+        width: 60px;
+        margin-left: -30px;
+        transform: scale(1);
+        -moz-transform: scale(1);
+        -o-transform: scale(1);
+        -webkit-transform: scale(1);
+        -ms-transform: scale(1);
+    }
+    /*区域5--团队*/
+
+    .a5_logo_area {
+        height: 55px;
+    }
+
+        .a5_logo_area a p {
+            font-size: 15px;
+        }
+
+    .a5_introduce, .a5_tute {
+        font-size: 14px;
+    }
+
+
+    /*火箭置顶*/
+    #rocket-to-top {
+        width: 105px;
+        transform: scale(0.6);
+        -webkit-transform: scale(0.6); /*Chrome和Safari*/
+        -o-transform: scale(0.6); /*Opera*/
+        -moz-transform: scale(0.6); /*Firefox*/
+        -ms-transform: scale(0.6); /*IE*/
+    }
+}
+
+@media screen and (max-width:480px) {
+    .con_home h1 {
+        width: 85%;
+        padding: 20px 0;
+    }
+}
+
+@media screen and (max-width:414px) {
+    .con_home img {
+        height: 250px;
+    }
+
+    .con_home h1 {
+        width: 70%;
+        top: 10%;
+        padding: 10px 0;
+        font-size: 20px;
+        font-weight: 100;
+        letter-spacing: 0;
+        border: 2px solid #FFF;
+    }
+
+    .con_home h2 {
+        width: 45%;
+        top: 30%;
+        padding: 10px 0;
+        font-size: 14px;
+        letter-spacing: 0;
+        font-weight: 100;
+    }
+
+    .con_nav {
+        width: 330px;
+        top: 45%;
+    }
+
+        .con_nav .con_nav_item {
+            margin: 8px 30px;
+        }
+
+    .con_nav_item .con_nav_item_icon i.fa {
+        font-size: 25px;
+    }
+    /*区域1--关于我*/
+
+    .con_area h2 span {
+        font-size: 18px;
+        font-weight: 100;
+        line-height: 32px;
+    }
+
+    .con_area h2 i {
+        bottom: 8px;
+    }
+    /*区域3--爱情观*/
+    .area3_love {
+        font-size: 14px;
+        font-weight: normal;
+    }
+    /*区域4--经验*/
+    .area4_experience {
+        width: 300px;
+        padding: 0;
+    }
+
+    .fancy img {
+        width: 136px;
+    }
+
+    .area4_introduce {
+        width: 136px;
+        margin-left: -68px;
+        bottom: 7px;
+    }
+    /*区域6--联系*/
+    .a6_p {
+        font-size: 14px;
+        line-height: 25px;
+        padding: 0 10px;
+    }
+}
+
+@media screen and (max-width:384px) {
+}
+
+@media screen and (max-width:375px) {
+    .con_nav {
+        width: 300px;
+    }
+
+        .con_nav .con_nav_item {
+            margin: 8px 25px;
+        }
+}
+
+@media screen and (max-width:360px) {
+}
+
+@media screen and (max-width:320px) {
+    /*博客连接*/
+    .enter_blog {
+        height: 176px;
+        border-right: 20px rgba(139, 139, 216, 0.4) solid;
+        border-bottom: 28px solid transparent;
+        border-top: 28px solid transparent;
+        font-size: 14px;
+    }
+
+        .enter_blog span {
+            width: 14px;
+            right: 3px;
+        }
+
+    .con_home img {
+        height: 215px;
+    }
+
+    .con_home h1 {
+        top: 5%;
+        padding: 8px 0;
+        font-size: 18px;
+        border: 1px solid #fff;
+    }
+
+    .con_home h2 {
+        width: 60%;
+        padding: 7px 0;
+        font-size: 13px;
+        font-weight: 700;
+        top: 24%;
+    }
+
+    .con_nav {
+        width: 270px;
+        top: 38%;
+    }
+
+        .con_nav .con_nav_item {
+            margin: 8px 20px;
+        }
+    /*区域1--关于我*/
+
+    .con_area h2 span {
+        font-size: 16px;
+    }
+
+    .area1_content_inform h3 {
+        font-size: 13px;
+    }
+    /*区域3--爱情观*/
+    .area3_love {
+        font-size: 13px;
+    }
+
+    /*区域5--团队*/
+    .a5_introduce, .a5_tute {
+        font-size: 13px;
+    }
+
+    /*区域6--联系*/
+
+    .a6_p {
+        font-size: 12px;
+    }
+
+
+    .touch_way_top i {
+        margin-top: -24px;
+        font-size: 48px;
+    }
+}
